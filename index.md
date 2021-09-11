@@ -22,6 +22,7 @@ Setelah membuat Token, silahkan Copy Token tersebut untuk melakukan konfigurasi.
     ```
   - Kemudian, lakukan pengecekan token yang telah tersimpan, dengan menggunakan perintah `source ~/.bashrc` dan __Enter__ , selanjutnya `echo $GITHUB_ACCESS_TOKEN` dan __enter__ 
   - Setelah muncul token yang telah di paste, Yang dilakukan senjutnya adalah memasukkan code token kedalam `git remote`. Lakukan pengecekan yang akan di**Remote** terlebih dahulu, gunakan perintah `git remote show origin` akan muncul hasil
+    
     ```
     * remote origin
       Fetch URL: https://[your_username]:[your_token]@github.com/[your_name]/[your_repository].git
@@ -32,6 +33,7 @@ Setelah membuat Token, silahkan Copy Token tersebut untuk melakukan konfigurasi.
       Local ref configured for 'git push':
         master pushes to master (fast-forwardable)
     ```
+    
   - kalau tidak muncul seperti tampilan di atas, maka lakukan remote kembali dengan menghapus terlebih dahulu remote sebelumya. Gunakan perintah `git rm origin` dan **Enter**
   - Selanjutnya tuliskan perintah `git remote add origin https://[your_username]:$GITHUB_ACCESS_TOKEN@github.com/[your_name]/[your_repository].git` dan **Enter**
   - Lakukan pengecekan kembali dengan mengunakan perintah `git remote show origin`
