@@ -32,7 +32,9 @@ Setelah membuat Token, silahkan Copy Token tersebut untuk melakukan konfigurasi.
       Local ref configured for 'git push':
         master pushes to master (fast-forwardable)
     ```
-  - ll
+  - kalau tidak muncul seperti tampilan di atas, maka lakukan remote kembali dengan menghapus terlebih dahulu remote sebelumya. Gunakan perintah `git rm origin` dan **Enter**
+  - Selanjutnya tuliskan perintah `git remote add origin https://[your_username]:$GITHUB_ACCESS_TOKEN@github.com/[your_name]/[your_repository].git` dan **Enter**
+  - Lakukan pengecekan kembali dengan mengunakan perintah `git remote show origin`
 
 3. Lakukan `git push --set-upstream origin master`
 
